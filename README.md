@@ -27,7 +27,9 @@ https://anastasiaseniorprojecthikeapp.azurewebsites.net/swagger/index.html.
 HikeApp Database
 
 Now that HikeApp API is already considered, the corresponding database may be discussed. As it is known, ASP.NET Core provides a framework in order to store as well as manage user accounts in ASP.NET Core applications (Vickers, 2019). When creating the project, individual user accounts were chosen as the authentication tools. Because of this Identity was added to the project automatically. What’s more, Identity uses Entity Framework data model (Vickers, 2019). Because of this, when running the migrations, the database was created with the following tables: AspNetRoles, AspNetUserClaims, AspNetUserLogins, AspNetUserRoles, AspNetUsers as well as AspNetUserTokens. Please refer to Figure 1 below in order to view the structure of the database.
+
 Figure 1
+![Figure 1](https://github.com/anastasiaakhv/HikeApp-API/blob/main/Figure%201.png)
 
 
 
@@ -39,6 +41,7 @@ Figure 1
 However, the program only implements the table AspNetUsers. As mentioned, the user information is stored in the table AspNetUsers. Please refer to Figure 2 in order to view the fields contained by the table AspNetUsers. Not every field is used. However, they remain in the table because of the possible future development of the project.
 
 Figure 2
+![Figure 2](https://github.com/anastasiaakhv/HikeApp-API/blob/main/Figure%202.png)
  
 
 All of the fields were created automatically when running the migrations except the field ident which is of type int and was declared with identity characteristic by an additional SQL query. The reason is that the original id field (created automatically) was too large of a size and could not be included in the packet. Therefore, the field ident of type int with smaller size was added to the table and was made an identity. More precisely, it increments by one with every new user registration – meaning that each new user has a unique id that can be used for the identification purposes. Last but not least, the entire project was deployed to Azure so that the HikeApp mobile application could interact with the API and make API calls. 
@@ -49,26 +52,31 @@ Vickers, A. (2019, January 07). Identity model customization in ASP.NET Core. Re
 
 Appendix A
 Screenshot 1
+![Screenshot 1](https://github.com/anastasiaakhv/HikeApp-API/blob/main/Scr1.png)
  
 Screenshot 2 
+![Screenshot 2](https://github.com/anastasiaakhv/HikeApp-API/blob/main/scr2.png)
  
 Screenshot 3
+![Screenshot 3](https://github.com/anastasiaakhv/HikeApp-API/blob/main/Scr3.png)
  
 Screenshot 4
+![Screenshot 4](https://github.com/anastasiaakhv/HikeApp-API/blob/main/Scr4.png)
  
-
 Screenshot 5 
+![Screenshot 5](https://github.com/anastasiaakhv/HikeApp-API/blob/main/Scr5.png)
  
 Screenshot 6
- 
+![Screenshot 6](https://github.com/anastasiaakhv/HikeApp-API/blob/main/Scr6.png)
+
 Screenshot 7
- 
-Screenshot 8 
- 
+![Screenshot 7](https://github.com/anastasiaakhv/HikeApp-API/blob/main/Scr7.png)
+
+Screenshot 8
+![Screenshot 8](https://github.com/anastasiaakhv/HikeApp-API/blob/main/Scr8.png)
 
 Screenshot 9
+![Screenshot 9](https://github.com/anastasiaakhv/HikeApp-API/blob/main/Scr9.png)
  
-
-
 
 
